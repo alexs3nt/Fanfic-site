@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Validar</title>
+        <script>
+            function perguntar () {
+                var nome = prompt ("Qual seu nome?");
+                var tamanho = nome.length;
+                alert("Seu nome tem: "+ tamanho +" letras.")
+                confirm (nome + " é seu nome?");
+                document.write(nome + "<br>");
+                document.write(tamanho);
+                console.log(nome);
+                console.log(tamanho);
+            }
+            function maíuscula() {
+                var email = gebi ("idEmail").value;
+                gebi("idEmail").value = email.toUpperCase();
+            }
+        </script>
+        <Script type="text/javascript" src="js/myscript.js"></Script>
+    </head>
+    <body>
+        <center>
+            <h1>validar</h1>
+                <form>
+                    <fieldset align="center" style="width:270px;">
+                        <legend>login</legend>
+                        Email: <input id="idEmail" type="text" onblur="maíuscula();"><br>
+                        Senha: <input id="idSenha" type="password"><br>
+                        <input type="button" value="Enviar" onclick="validar();">
+                    </fieldset>
+                </form>
+        </center>
+    </body>
+</html>
